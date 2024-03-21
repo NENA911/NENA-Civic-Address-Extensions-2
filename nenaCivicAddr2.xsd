@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:ca="urn:ietf:params:xml:ns:pidf:geopriv10:civicAddr" xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="urn:nena:xml:ns:pidf:nenaCivicAddr2" elementFormDefault="qualified">
+  <xs:import namespace="urn:ietf:params:xml:ns:pidf:geopriv10:civicAddr" schemaLocation="https://www.iana.org/assignments/xml-registry/schema/pidf/geopriv10/civicAddr.xsd" />
+  <xs:import namespace="http://www.w3.org/XML/1998/namespace" schemaLocation="http://www.w3.org/2001/xml.xsd" />
+  <xs:annotation>
+    <xs:appinfo source="urn:nena:xml:ns:pidf:nenaCivicAddr2">
+       NENA Civic Address extensions for PIDF-LO</xs:appinfo>
+  </xs:annotation>
+  <!--Site-->
+  <xs:element name="SITE" type="ca:caType" />
+  <!--Subsite-->
+  <xs:element name="SUBSITE" type="ca:caType" />
+  <!--Wing-->
+  <xs:element name="WING" type="ca:caType" />
+  <!--Unit Pre Type-->
+  <xs:element name="UNIT_PRETYPE" type="ca:caType" />
+  <!--Unit Value-->
+  <xs:element name="UNIT_VALUE" type="ca:caType" />
+  <!--Section-->
+  <xs:element name="SECTION" type="ca:caType" />
+  <!--Row-->
+  <xs:element name="ROW" type="ca:caType" />
+  <!--Postal Code Extension-->
+  <xs:element name="PCE" type="ca:caType" />
+  <!--Direction of Travel-->
+  <xs:element name="DT" type="ca:caType"/>
+  <!--House Number Complete-->
+  <xs:element name="HNC" type="ca:caType" />
+</xs:schema>
